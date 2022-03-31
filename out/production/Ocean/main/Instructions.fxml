@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="612.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InstructionsController">
+   <children>
+      <ImageView fitHeight="612.0" fitWidth="771.0" layoutX="-1.0">
+         <image>
+            <Image url="@../back.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#401f00" layoutX="199.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructions" wrappingWidth="358.9375">
+         <font>
+            <Font name="Book Antiqua Bold" size="65.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Label fx:id="InstructionsLabel" contentDisplay="CENTER" layoutX="88.0" layoutY="14.0" prefHeight="469.0" prefWidth="576.0" textFill="#361e09">
+         <font>
+            <Font name="Tw Cen MT Condensed Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="550.0" fitWidth="580.0">
+               <image>
+                  <Image url="@../instructions.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Button layoutX="558.0" layoutY="516.0" mnemonicParsing="false" onAction="#start" prefHeight="59.0" prefWidth="135.0" text="Start" textFill="#a46326">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ffc803" height="127.5" radius="95.125" width="255.0" />
+         </effect>
+      </Button>
+      <Button layoutX="71.0" layoutY="518.0" mnemonicParsing="false" onAction="#back" prefHeight="59.0" prefWidth="122.0" text="Back" textFill="#a46326">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#ffcc01" height="6.17" radius="64.7925" width="255.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
